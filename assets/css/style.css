@@ -1,0 +1,148 @@
+html{
+    position: relative;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    background: url("../images/bgimage.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4aaaa5;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1em;
+}
+
+/******************
+LAYOUT
+********************/
+
+
+
+header{
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #cccccc;
+    background-color: #ffffff;
+}
+
+header .container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.name, .nav{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding:0;
+}
+
+.name {
+    width: 50%;
+}
+
+.logo{
+    display: inline-block;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.04em;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 1em;
+	width: auto;
+}
+
+.nav{
+    width: 49%;
+    text-align: right;
+    color: #777777;
+    font-weight: normal;
+}
+
+.nav ul li{
+    position: relative;
+    display: inline-block;
+    padding-left: 1em;
+    margin-left: 1em;
+
+}
+.nav ul li a{
+    color: #777777;
+    text-decoration: none;
+    -webkit-transition: color .4s;
+    transition: color .4s;
+}
+
+.nav ul li a:hover{
+    color: #ffffff;
+    background: #4aaaa5;
+    border-width: 100px;
+    padding: .25em;
+    transition: .2s ease-in-out;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav ul li a.active{
+    color: black;
+}
+
+.nav ul li+li{
+    border-left: 1px solid #cccccc;
+}
+
+
+/********************
+MAIN BOX CONTENT
+********************/
+
+.content{
+    width: 960px;
+    clear: both;
+    margin: 0 auto 6em auto;
+}
+
+.main{
+    display: inline-block;
+    width: 540px;
+	margin: 70px 0;
+	padding: 40px;
+	background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.main h2 {
+	font-size: 2em;
+	font-weight: bold;
+	padding-bottom: 1em;
+	margin-bottom: 0.8em;
+	border-bottom: 2px solid #dddddd;
+}
+
+.main p {
+	font-size: 16px;
+	line-height: 1.75em;
+	margin-bottom: 2em;
+}
+
+img.about-photo {
+	float: left;
+	padding: 0 1em 1em 0;
+	width: 200px;
+	height: 200px;
+}

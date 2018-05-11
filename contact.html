@@ -1,40 +1,50 @@
 <!doctype html>
 <html>
-
-
 <head>
     <meta charset="UTF-8">
     <title>Portfolio WebPage</title>
-
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css">-->
-</head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head> 
 <body>
+    <header>
+        <div class="content">
+            <h1>Samuel Marcus</h1>
+            <nav>   
+                <ul>
+                    <li><a href="index.html">About</a></li> |
+                    <li><a href="Portfolio.html">Portfolio</a></li> |
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
 
-    <h1>Samuel Marcus</h1>
 
-    <ul>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-    </ul>
+        <div class="content">
+            <section id="left-column">
+                <h2>Contact Me</h2><br>
+                
+                <form>
+                    Name <br>
+                    <input type ="text" name="name" id="full-name" placeholder="John Doe"><br><br>
+                    Email:<br>
+                    <input type="text" name="email" id="email" placeholder="email@email.com"><br><br>
+                    Message:<br>
+                    <textarea id="messageBox" type="text" name="message" placeholder="message text..."></textarea><br><br>
+                    <button type="submit">Submit Form</button>
+                    
+                </form>
 
-
-
-    <h1>Contact</h1>
-    <hr>
-    <form>
-        Name: <br>
-        <input type ="text" name="fullname"><br><br>
-        Email:<br>
-        <input type="text" name="email"><br><br>
-        Message:<br>
-        <input id="messageBox" type="text" name="message"><br><br>
-        <input type="submit" value="Submit">
+            </section>
+        </div>
+    <div class="clearfix"></div>
+   
+    <footer>
+        &copy;2018 Samuel Marcus
+    </footer>
     
-    </form>
-
-
-
 
 
 </body>
