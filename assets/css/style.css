@@ -113,7 +113,7 @@ MAIN BOX CONTENT
 
 .content{
     width: 960px;
-    clear: both;
+    clear: both; 
     margin: 0 auto 6em auto;
 }
 
@@ -153,6 +153,7 @@ Portfolio Page
 ***********************/
 .image-port{
     width: 270px;
+    height: 200px;
 }
 
 
@@ -170,17 +171,17 @@ Portfolio Page
 
 .item-name{
     position: relative;
-    top: -90px;
+    top: -75px;
     text-align: center;
     background-color: #4aaaa5;
     padding: 1em;
     color: #ffffff;
-    z-index: 1000;
+    z-index: 900;
 }
 
 
 footer {
-	position: absolute;
+    position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -189,7 +190,8 @@ footer {
 	font-size: 0.8em;
 	color: #cccccc;
 	background-color: #666666;
-	border-top: 7px solid #4aaaa5;
+    border-top: 7px solid #4aaaa5;
+    z-index: 1000;
 }
 
 /****************************
@@ -224,3 +226,7 @@ Contat Page
     font-size: 1em;
     margin: 0 auto;
 }
+
+::placeholder {
+    color: #cccccc;
+  }
